@@ -1,4 +1,4 @@
-package com.example.todolistappfinal.ui.slideshow
+package com.example.todolistappfinal.ui.tomorrow
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.todolistappfinal.databinding.FragmentLaterdateBinding
+import com.example.todolistappfinal.databinding.FragmentTomorrowBinding
 
-class LaterDateFragment : Fragment() {
+class TomorrowFragment : Fragment() {
 
-    private var _binding: FragmentLaterdateBinding? = null
+    private var _binding: FragmentTomorrowBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class LaterDateFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(LaterDateViewModel::class.java)
+        val galleryViewModel =
+            ViewModelProvider(this).get(TomorrowViewModel::class.java)
 
-        _binding = FragmentLaterdateBinding.inflate(inflater, container, false)
+        _binding = FragmentTomorrowBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textTomorrow
+        galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

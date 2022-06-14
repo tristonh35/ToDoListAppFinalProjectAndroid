@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/drawable/rounded_button.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/activity_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/app_bar_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/content_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/fragment_edit_to_do_item.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/fragment_laterdate.xml" value="0.14722222222222223" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/fragment_today.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/fragment_tomorrow.xml" value="0.161231884057971" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/nav_header_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/layout/todo_item.xml" value="0.161231884057971" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/menu/activity_main_drawer.xml" value="0.2163265306122449" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/menu/main.xml" value="0.346875" />
+        <entry key="..\:/AndroidProjects/FINALANDROID/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/ToDoListAppFinal/app/src/main/res/layout/activity_main.xml" value="0.14722222222222223" />
         <entry key="..\:/AndroidProjects/ToDoListAppFinal/app/src/main/res/layout/app_bar_main.xml" value="0.14722222222222223" />
         <entry key="..\:/AndroidProjects/ToDoListAppFinal/app/src/main/res/layout/content_main.xml" value="0.358695652173913" />

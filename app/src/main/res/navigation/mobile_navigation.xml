@@ -3,23 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_today">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.todolistappfinal.ui.home.TodayFragment"
+        android:id="@+id/nav_today"
+        android:name="com.example.todolistappfinal.ui.today.TodayFragment"
         android:label="@string/menu_today"
-        tools:layout="@layout/fragment_today" />
+        tools:layout="@layout/fragment_today" >
+        <action
+            android:id="@+id/action_todayFragment_to_editToDoItemFragment"
+            app:destination="@id/editToDoItemFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editToDoItemFragment"
+        android:name="com.example.todolistappfinal.EditToDoItemFragment"
+        android:label="fragment_edit_to_do_item"
+        tools:layout="@layout/fragment_edit_to_do_item" >
+        <argument
+            android:name="toDoItemId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_editToDoItemFragment_to_nav_today"
+            app:destination="@id/nav_today"
+            app:popUpTo="@id/nav_today"
+            app:popUpToInclusive="true" />
+    </fragment>
+
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.todolistappfinal.ui.gallery.TomorrowFragment"
+        android:id="@+id/nav_tomorrow"
+        android:name="com.example.todolistappfinal.ui.tomorrow.TomorrowFragment"
         android:label="@string/menu_tomorrow"
         tools:layout="@layout/fragment_tomorrow" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.todolistappfinal.ui.slideshow.LaterDateFragment"
+        android:id="@+id/nav_laterdate"
+        android:name="com.example.todolistappfinal.ui.laterdate.LaterDateFragment"
         android:label="@string/menu_laterdate"
         tools:layout="@layout/fragment_laterdate" />
 </navigation>

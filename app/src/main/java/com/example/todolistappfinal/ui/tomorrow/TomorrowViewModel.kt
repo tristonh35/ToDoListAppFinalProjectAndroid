@@ -1,13 +1,13 @@
-package com.example.todolistappfinal.ui.slideshow
+package com.example.todolistappfinal.ui.tomorrow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class LaterDateViewModel : ViewModel() {
+class TomorrowViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is where you can add to do objects for a later date"
+        value = "This is where tomorrows to do list will be"
     }
     val text: LiveData<String> = _text
 }
